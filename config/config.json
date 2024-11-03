@@ -1,0 +1,10 @@
+{
+    "development": {
+      "username": "username",
+      "password": "password",
+      "database": "notification_db",
+      "host": "localhost",
+      "dialect": "postgres"
+    }
+  }
+  

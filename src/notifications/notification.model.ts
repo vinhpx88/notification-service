@@ -1,7 +1,7 @@
 // src/notifications/notification.model.ts
 import { Table, Column, Model, DataType, ForeignKey } from 'sequelize-typescript';
 
-@Table
+@Table({ tableName: 'notifications' })
 export class Notification extends Model<Notification> {
   @Column({
     type: DataType.INTEGER,

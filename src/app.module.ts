@@ -4,6 +4,8 @@ import { Notification } from './notifications/notification.model'; // Import you
 import { NotificationsModule } from './notifications/notifications.module'; // Import your NotificationsModule
 import { UserDeviceTokenModule } from './user-device-tokens/user-device-token.module';
 import { UserModule } from './users/user.module';
+import { CarStatisticsController } from './car-statistics/car-statistics.controller';
+import { CarStatisticsModule } from './car-statistics/car-statistics.module';
 
 @Module({
   imports: [
@@ -21,6 +23,8 @@ import { UserModule } from './users/user.module';
     NotificationsModule,
     UserModule,
     UserDeviceTokenModule,
+    CarStatisticsModule,
   ],
+  controllers: [],
 })
 export class AppModule {}
