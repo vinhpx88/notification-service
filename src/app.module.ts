@@ -4,8 +4,10 @@ import { Notification } from './notifications/notification.model'; // Import you
 import { NotificationsModule } from './notifications/notifications.module'; // Import your NotificationsModule
 import { UserDeviceTokenModule } from './user-device-tokens/user-device-token.module';
 import { UserModule } from './users/user.module';
-import { CarStatisticsController } from './car-statistics/car-statistics.controller';
 import { CarStatisticsModule } from './car-statistics/car-statistics.module';
+import { LicensesController } from './licenses/licenses.controller';
+import { LicensesService } from './licenses/licenses.service';
+import { LicensesModule } from './licenses/licenses.module';
 
 @Module({
   imports: [
@@ -24,7 +26,9 @@ import { CarStatisticsModule } from './car-statistics/car-statistics.module';
     UserModule,
     UserDeviceTokenModule,
     CarStatisticsModule,
+    LicensesModule,
   ],
-  controllers: [],
+  controllers: [LicensesController],
+  providers: [LicensesService],
 })
 export class AppModule {}

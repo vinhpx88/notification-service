@@ -22,9 +22,11 @@
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
+    "@nestjs/devtools-integration": "^0.1.6",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/sequelize": "^10.0.1",
     "@nestjs/swagger": "^8.0.1",
+    "aws-sdk": "^2.1691.0",
     "firebase-admin": "^12.7.0",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
