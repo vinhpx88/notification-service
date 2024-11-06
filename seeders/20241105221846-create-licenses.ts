@@ -3,7 +3,7 @@ import { QueryInterface, DataTypes } from 'sequelize';
 
 export default {
   async up(queryInterface: QueryInterface) {
-    await queryInterface.createTable('licenses', {
+    await queryInterface.createTable('Licenses', {
       id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -42,6 +42,6 @@ export default {
   },
 
   async down(queryInterface: QueryInterface) {
-    await queryInterface.dropTable('licenses');
+    await queryInterface.dropTable('Licenses');
   },
 };

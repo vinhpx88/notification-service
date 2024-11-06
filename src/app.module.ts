@@ -5,9 +5,8 @@ import { NotificationsModule } from './notifications/notifications.module'; // I
 import { UserDeviceTokenModule } from './user-device-tokens/user-device-token.module';
 import { UserModule } from './users/user.module';
 import { CarStatisticsModule } from './car-statistics/car-statistics.module';
-import { LicensesController } from './licenses/licenses.controller';
-import { LicensesService } from './licenses/licenses.service';
 import { LicensesModule } from './licenses/licenses.module';
+import { AuditLogsModule } from './audit-logs/audit-logs.module';
 
 @Module({
   imports: [
@@ -27,8 +26,9 @@ import { LicensesModule } from './licenses/licenses.module';
     UserDeviceTokenModule,
     CarStatisticsModule,
     LicensesModule,
+    AuditLogsModule,
   ],
-  controllers: [LicensesController],
-  providers: [LicensesService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
